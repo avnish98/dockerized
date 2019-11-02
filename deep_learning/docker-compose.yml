@@ -1,14 +1,14 @@
 version: "3"
 services:
-  deep-leaning:
+  deep-learning:
     build:
       context: ../
       dockerfile: ./docker/Dockerfile
       args:
         - username=devel
         - userid=1000
-    container_name: deep-leaning
-    image: deep-leaning
+    container_name: deep-learning
+    image: deep-learning
     restart: unless-stopped
     logging:
       driver: json-file
